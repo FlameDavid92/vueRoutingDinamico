@@ -1,6 +1,6 @@
 <template>
   <div>
-    <template v-if="!paramKeyPost && category && getPosts">
+    <template v-if="!paramKeyPost && category">
       <h1 >{{ category.name }}</h1>
       <h4 >{{ category.description }}</h4>
       <hr />
