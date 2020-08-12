@@ -4,7 +4,8 @@ var path = require('path');
 var serveStatic = require('serve-static');
 const app = express();
 app.use(history());
-app.use(serveStatic(__dirname + "/dist"));
+
+//app.use(serveStatic(__dirname + "/dist"));
 
 app.get('/', (req, res) => {
   res.sendFile('dist/index.html');
